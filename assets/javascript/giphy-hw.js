@@ -69,9 +69,11 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
   $("#addChar").on("click", function() {
     var newChar = $("#search-input").val();
-    starwarsList.push(newChar);
-    $("#search-input").val("");
-    renderButtons(starwarsList);
+    if (newChar) {
+      starwarsList.push(newChar);
+      $("#search-input").val("");
+      renderButtons(starwarsList);
+    }
     return false;
   });
 });
