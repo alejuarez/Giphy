@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     $("#gifContainer").empty();
     var movie1 = $(this).attr("data-name");
     var queryUrl =
-      "http://api.giphy.com/v1/gifs/search?q=" +
+      "https://api.giphy.com/v1/gifs/search?q=" +
       movie1 +
       movie +
       "&api_key=YJvQgvHrxAVUmun9MUVGZSJNPOciKpyI&limit=10&rating=G";
